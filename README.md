@@ -45,6 +45,19 @@ We need to copy files in `dist` folder to spring public folder `src/main/resourc
 cd ..
 cp -r angular2-frontend/dist src/main/resources/public
 ```
+You should write a gradle task to do this, ex:
+```
+task buildFrontend(type: Exec){
+	workingDir './angular2-frontend'
+	commandLine 'ng','build'
+	
+}
+task copyFrontendToSpring(type: Copy){
+	from './angular2-frontend/dist'
+	into 'src/main/resources/public'
+}
+
+```
 #### 4 Serve your website
 Now run your project
  ```sh
