@@ -2,8 +2,11 @@
 Angular2 Typescript with Spring Boot
 
 ## Built With
-[Spring Initializr](https://start.spring.io/) Spring Initializr bootstrap your application.
-[Angular CLI](https://cli.angular.io/) A command line interface for Angular
+- [Spring Initializr](https://start.spring.io/) Spring Initializr bootstrap your application.
+- [Angular CLI](https://cli.angular.io/) A command line interface for Angular
+- [Gradle](https://gradle.org) Gradle Build Tool
+- [Angular2](https://angular.io/docs/ts/latest/quickstart.html)
+
 ## Installation
 To run this app:
 ```sh
